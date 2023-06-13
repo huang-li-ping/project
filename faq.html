@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <script src="js/jquery-3.7.0.js"></script>
+    <title>Meet Food | FAQ </title>
+</head>
+
+<body>
+    <div>
+        <!-- 選單 -->
+        <input type="checkbox" name="" id="menu--switch">
+
+        <header class="main--header">
+
+            <div class="logo">
+                <a href="index.html"><img src="logo.png"></a>
+            </div>
+
+            <label for="menu--switch" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="main--nav">
+                <a href="reservations.html">Reservations</a>
+                <a href="menu.html">Menu</a>
+                <a href="news.html">News</a>
+                <a href="about.html">About</a>
+                <a href="faq.html">FAQ</a>
+                <a href="branch.html">Branch</a>
+            </nav>
+        </header>
+        <div class="faqContainer">
+        <div class="faqHeader">
+            <div class="faqTitle">
+                <h1>FAQ</h1>
+            </div>
+            <div class="faqDescription">
+                <p>我們整理了以下常見問題，如有其他疑問歡迎來信，或於客服上班時間撥打客服電話。</p>
+                <p><i class="fa-solid fa-envelope"></i>客服信箱：　<a href="mailto:meetfoodservice@gmail.com">meetfoodservice@gmail.com</a><br>
+                    <i class="fa-solid fa-phone"></i>客服電話：　+886 917555666
+                    <br>
+                    <i class="fa-solid fa-clock"></i>上班時間：　Mon. - Fri. 09:00 AM - 05:00 PM
+                </p>
+            </div>
+
+        </div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        MEET FOOD 餐廳是否提供停車位？
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                       <p>是的，我們的餐廳提供免費停車位給顧客使用。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        我可以攜帶寵物進入餐廳嗎？
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>很抱歉，根據衛生和安全考慮，我們不允許攜帶寵物進入餐廳，但我們通常允許服務動物進入。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        MEET FOOD 餐廳接受現金支付嗎？
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                       <p>是的，我們接受現金支付。此外，我們也接受信用卡和行動支付等多種支付方式</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        我需要提前預訂座位嗎？
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>為了確保您有一個愉快的用餐體驗，我們建議您提前預訂座位，特別是在繁忙的時間段。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        餐廳有提供素食或特殊飲食要求的選擇嗎？
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>是的，我們的菜單中包含素食選項以及對於特殊飲食要求的選擇，請告知服務人員您的需求。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        我可以帶自己的蛋糕慶祝嗎？
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>很抱歉，基於衛生和安全原因，我們不允許攜帶外部食物或蛋糕進入餐廳。但是，我們可以為您提供一個特別的蛋糕，請提前通知我們。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        餐廳有提供外賣服務嗎？
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>是的，我們提供外賣服務。您可以通過我們的網站或致電訂購，我們將盡快為您準備好外賣餐點。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        餐廳有提供兒童座椅嗎？
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>是的，我們餐廳提供兒童座椅，以確保孩童的安全和舒適。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        餐廳有提供無麩質或適合特殊飲食需求的選擇嗎？
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>是的，我們的菜單中有無麩質選項以及適合特殊飲食需求的選擇。請告知服務人員您的需求，我們將竭力滿足您的要求。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        餐廳有提供禮品卡嗎？
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>是的，我們餐廳提供禮品卡服務。您可以在我們的網站或餐廳前台購買禮品卡，並將其作為禮物送給您的親朋好友。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Footer -->
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer_pic">
+                        <img src="logo_footer.png" alt="">
+                    </div>
+                    <div class="footer_info">
+                        <h3>Info</h3>
+                        <span>Address: 新北市淡水區中正路1號</span>
+                        <span>Tel: +886 917449666</span>
+                        <span>Mail: happyporkrice@gmail.com</span>
+                    </div>
+                    <div class="footer_service">
+                        <h3>服務與權利</h3>
+                        <a href="#">隱私權聲明</a>
+                        <a href="#">網站使用條款</a>
+                        <a href="#">防疫措施公告</a>
+                        <a href="#">聯絡我們</a>
+                    </div>
+                    <div class="footer_follow">
+                        <h3>Follow Us</h3>
+                        <li><a href="#"><i class="fas fa-globe-americas"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <div class="clearfix"></div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- top button -->
+        <a href="javascript:void(0)" onclick="topFunction()" id="myBtn" title="Go to top">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+
+</body>
+<script>
+    //top button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    $("a#myBtn").on("click", function () {
+        $("html").animate({
+            scrollTop: 0
+        });
+    });
+
+</script>
+
+</html>

@@ -1,0 +1,533 @@
+/* ----------------index-------------- */
+
+/* banner 輪播圖 */
+.slideshow {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    /* max-width: 100%; */
+    border-bottom: 1.5px solid #1285C5;
+
+}
+
+.slideshow img {
+    /* width: 100%;
+    height: 100%; */
+    max-width: 100%;
+    max-height: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    object-fit: cover;
+}
+
+/* banner 文字區 */
+.bannerTitle img {
+    display: none;
+}
+
+.bannerTitle .row {
+    /* height: 50vh; */
+    display: flex;
+    align-content: center;
+}
+
+.bannerTitle .col-12 {
+    margin: 20px;
+}
+
+.banner h1 {
+    font-size: 28px;
+}
+
+/* banner 媒體查詢 */
+@media screen and (min-width:768px) {
+    .bannerTitle img {
+        display: block;
+        width: 300px;
+        height: auto;
+    }
+
+    .banner {
+        padding: 60px 0px 0px 0px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bannerTitle {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .bannerTitle .col-12 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 10px;
+        /* margin-left: 20%;
+        margin-top: 20%; */
+    }
+
+    .slideshow {
+        display: block;
+        width: 50vw;
+        height: 92.5vh;
+    }
+
+    .slideshow {
+        border-bottom: none;
+    }
+    .banner h1 {
+        font-size: 32px;
+    }
+
+
+    /* .row .slideshow--contain{
+        border-bottom:#1285C5 1.5px solid;
+        border-left: #1285C5 1.5px solid;
+    } */
+    .slideshow img {
+        max-width: 100%;
+        max-height: auto;
+        border-left: 2.5px solid #1285C5;
+    }
+
+}
+
+
+
+/* about */
+.title h2,
+.title h3,
+.title p {
+    margin: 20px 0px;
+}
+
+.about .col-12 {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    /* height: 400px; */
+    /* max-width: 100%; */
+    border-bottom: 1.5px solid #1285C5;
+    padding: 10px;
+}
+
+.about .col-12 img {
+    /* width: 100%;
+    height: 100%; */
+    max-width: 100%;
+    max-height: auto;
+    top: 0;
+    margin: auto;
+    object-fit: cover;
+}
+
+/* 按鈕置中 */
+.buttonMore {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.about .col-6 {
+    display: none;
+}
+
+/* about區媒體查詢 */
+@media screen and (min-width:768px) {
+    .about .col-12 {
+        display: none;
+        width: 50%;
+
+    }
+
+    .about .col-6 {
+        display: block;
+        width: 50%;
+    }
+
+    .about .title,
+    .about .txt {
+        margin: 50px;
+    }
+
+    .about .col-6:first-child {
+        border-left: #1285C5 1.5px solid;
+        order: 1;
+    }
+
+    .about .col-6 img {
+        max-width: 100%;
+        max-height: auto;
+        top: 0;
+        left: 0;
+        margin: 0px;
+        object-fit: cover;
+    }
+
+    .row .about {
+        display: flex;
+    }
+
+    .title,
+    .txt,
+    .buttonMore {
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+}
+
+/* menu */
+.title h2,
+.title h3,
+.title p {
+    margin: 20px 0px;
+}
+
+.menu .col-12 {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    /* height: 400px; */
+    /* max-width: 100%; */
+    border-bottom: 1.5px solid #1285C5;
+    padding: 10px;
+}
+
+.menu .col-12 img {
+    /* width: 100%;
+        height: 100%; */
+    max-width: 100%;
+    max-height: auto;
+    top: 0;
+    margin: auto;
+    object-fit: cover;
+}
+
+.menu .col-6 {
+    display: none;
+}
+
+.menuList_link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menuList_link i {
+    position: relative;
+    left: -20px;
+}
+
+/* menu區媒體查詢 */
+@media screen and (min-width:768px) {
+    .menu .col-12 {
+        display: none;
+        width: 50%;
+
+    }
+
+    .menu .col-6 {
+        display: block;
+        width: 50%;
+    }
+
+    .menu .title,
+    .menu .txt {
+        margin: 50px;
+    }
+
+    .menu .col-6:nth-child(2) {
+        border-left: #1285C5 1.5px solid;
+        /* order:1; */
+    }
+
+    .menu .col-6 img {
+        max-width: 100%;
+        max-height: auto;
+        top: 0;
+        left: 0;
+        margin: 0px;
+        object-fit: cover;
+    }
+
+    .row .menu {
+        display: flex;
+    }
+
+    .title,
+    .txt,
+    .buttonMore {
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+}
+
+/* !! menuList區 圖片hover待處理
+.col-3{
+    overflow: hidden;
+}
+.menuList .col-3:hover img {
+    transform: scale(1.1);
+    transition: 1s;
+} */
+/* menuList 隱藏桌機  */
+.menuList .col-3 {
+    display: none;
+}
+
+.row .menuList {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuList .col-12 {
+    padding: 3%;
+    border-bottom: #1285C5 1.5px solid;
+}
+
+
+/* MenuList區塊 桌機 */
+@media screen and (min-width:768px) {
+
+    .menuList {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+    }
+
+    .menuList .col-3 {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-content: center;
+        padding: 20px;
+        border-right: 1.5px solid #1285C5;
+        border-bottom: 1.5px solid #1285C5;
+    }
+
+    .menuList .col-12 {
+        display: none;
+        /*隱藏手機版*/
+
+    }
+
+    .menuList_title {
+        padding: 10px 0px 0px 0px;
+    }
+
+    .col-3 .menuList_link {
+        margin-top: auto;
+        padding: 10px 0px;
+    }
+
+    .menuList .col-3:nth-child(6) {
+        border-right: none;
+    }
+}
+    /* news 區塊(手機)*/
+    .news .col-12 {
+        /* margin: 0px 0px 0px 10px; */
+        padding: 10px;
+        border-bottom: 1.5px solid #1285C5;
+    }
+
+
+/* .about .col-6:first-child{
+        width: 50vw;    
+    } */
+.newsTitle {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.newsTitle h2 {
+    margin: 40px 0px 30px 0px;
+}
+
+.newsList h4 {
+    border-bottom: 1px dashed #1285C5;
+    padding-bottom: 5px;
+
+}
+
+/* news 超連結 */
+.newsList a {
+    text-decoration: none;
+    color: #1285C5;
+}
+
+.newsList a:visited {
+    color: #D685C5;
+}
+
+.news h4:hover {
+    color: #D685C5;
+    font-weight: bold;
+    transition: all 0.5s 0s;
+    /* text-decoration: dashed  #1285C5 0.5px underline;
+        text-underline-offset: 6px; */
+}
+
+/* News區塊 媒體查詢 平板/桌機 */
+@media screen and (min-width:768px) {
+    .news .col-12 {
+        display: flex;
+        flex-direction: row;
+        gap: 9.5%;
+        align-content: center;
+        align-items: center;
+        margin-left: 10%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-bottom: none;
+    }
+
+    .news .buttonMore {
+        position: relative;
+        left: 10%;
+    }
+}
+
+/* Branch 手機 */
+.branchTitle h2 {
+    margin: 40px 0px 30px 0px;
+}
+
+.branch .col-12 {
+    margin: 0px 0px 0px 10px;
+    border-bottom: 1.5px solid #1285C5;
+}
+
+.branches .col-6:first-child {
+    border-right: #1285C5 solid 1.5px;
+}
+
+.branches {
+    display: flex;
+    flex-grow: 1;
+}
+
+.branchPic {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.branchCard {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 15px;
+}
+
+.branchLink {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.branchLink i {
+    position: relative;
+    left: -20px;
+}
+
+.branchPic img {
+    max-width: 100%;
+    max-height: 285px;
+}
+
+.branchPic:hover img {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.branchCard:hover h4,
+.branchCard:hover p {
+    color: #D685C5;
+}
+
+.menuList_link:hover i {
+    position: relative;
+    left: 1%;
+    transition: all 0.5s 0s;
+
+}
+
+.branchLink:hover i {
+    position: relative;
+    left: 1%;
+    transition: all 0.5s 0s;
+
+}
+
+.branchLink:hover i {
+    color: #D685C5 !important;
+}
+
+.menuList_link:hover i {
+    color: #D685C5 !important;
+}
+
+.branch .col-4 {
+    display: none
+}
+
+
+/* Branch 媒體查詢平板/桌 */
+@media screen and (min-width:768px) {
+
+    .branch .col-12,
+    .branches .col-6 {
+        display: none;
+    }
+
+    .row .branch {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .branch .col-4 {
+        display: block;
+        padding: 20px;
+    }
+
+    .branchTitle {
+        margin: 0px 20px;
+    }
+
+    .branchTxt br {
+        display: none;
+    }
+
+    .branchPic img {
+        width: 526px;
+    }
+
+    .branch .col-4 {
+        border-right: 1.5px solid #1285C5;
+        box-sizing: border-box;
+    }
+
+    .branch .col-4:nth-last-child(1) {
+        border-right: none;
+    }
+}
+

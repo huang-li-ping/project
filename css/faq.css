@@ -1,0 +1,53 @@
+/* ------ FAQ ------ */
+
+.faqHeader{
+    padding-top:7%;
+}
+.accordion-button{
+    background-color: #F8F6ED; /*按鈕背景顏色 */
+    color:#1285C5; /*按鈕文字顏色 */
+}
+.accordion-item{
+    background-color: #F8F6ED; /*彈出來的item背景色*/
+
+}
+.accordion{
+     --bs-accordion-active-bg:#1285C5; /*選取的 item 背景 */
+    --bs-accordion-active-color: #fff; /*選取的 item 文字顏色 */
+    --bs-accordion-btn-focus-border-color: #F8F6ED;
+    --bs-accordion-btn-focus-box-shadow: #D685C5;
+}
+
+.accordion-body p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.faqTitle h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.faqHeader{
+    width: 90%;
+margin:auto;
+}
+.faqDescription .fa-solid{
+margin-right:10px;
+
+}
+/* ------ Desktop------ */
+
+@media screen and (min-width:768px) {
+    .faqContainer{
+        max-width: 1000px;
+        margin:auto;
+        padding:5%;
+    }
+    .faqHeader{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom:5%;
+    }
+    }
+
+

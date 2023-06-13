@@ -1,0 +1,172 @@
+/* ------News------ */
+.newsContainer{
+    padding-top:7%;
+    padding-bottom: 3%;
+    max-width: 1000px;
+    margin: auto;
+}
+h1{
+    margin-bottom:3%;
+}
+
+/* ------頁籤------ */
+#tab {
+    width: 100%;
+    background: #1285C5;
+    border: solid 1px #1285C5;
+}
+
+/* 頁籤ul */
+#tab > ul {
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 10px 20px 0 20px;
+}
+
+#tab > ul > li {
+    list-style-type: none;
+}
+
+/* 頁籤上的文字 */
+#tab > ul > li > a { 
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    float: left;
+    padding: 10px;
+    margin-left: 5px;
+    /* width: 8%; */
+    text-align: center;
+}
+
+/*頁籤div內容*/
+#tab > div {
+    clear: both;
+    /* padding: 0 15px; */
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/*第一筆的底色*/
+span:target ~ #tab > ul li:first-child a {
+    background: #1285C5;
+    color:#F8F6ED;
+
+}
+
+span:target ~ #tab > div:first-of-type {
+    visibility: hidden;
+    height: 0;
+    /* padding: 0 15px; */
+}
+
+/*頁籤變換&第一筆*/
+span ~ #tab > ul li:first-child a,
+#tab-1:target ~ #tab > ul li a[href$="#tab-1"],
+#tab-2:target ~ #tab > ul li a[href$="#tab-2"],
+#tab-3:target ~ #tab > ul li a[href$="#tab-3"],
+#tab-4:target ~ #tab > ul li a[href$="#tab-4"] {
+    background: #F8F6ED;
+    color:#1285C5;
+    border-radius: 5px 5px 0 0;
+}
+
+span ~ #tab > ul li:first-child a::before,
+#tab-1:target ~ #tab > ul li a[href$="#tab-1"]::before,
+#tab-2:target ~ #tab > ul li a[href$="#tab-2"]::before,
+#tab-3:target ~ #tab > ul li a[href$="#tab-3"]::before,
+#tab-4:target ~ #tab > ul li a[href$="#tab-4"]::before {
+    background-color: #F8F6ED;
+    height: 100%;
+}
+
+/*頁籤內容顯示&第一筆*/
+span ~ #tab > div:first-of-type,
+#tab-1:target ~ #tab > div.tab-content-1,
+#tab-2:target ~ #tab > div.tab-content-2,
+#tab-3:target ~ #tab > div.tab-content-3,
+#tab-4:target ~ #tab > div.tab-content-4 {
+    visibility: visible;
+    height: auto;
+    background: #F8F6ED;
+}
+#tab-1, #tab-2, #tab-3 {
+    display: none;
+}
+
+/* -------頁籤內容------ */
+/* 字型外觀 */
+
+.article:hover i {
+    position: absolute;
+    right: 9%;
+    transition: all 0.5s 0s;
+    color: #D685C5 !important;
+}
+
+
+h2{
+    font-size: 16px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+a:hover h2{
+    color:#D685C5;
+    text-decoration: dashed #D685C5 0.5px underline;
+    text-underline-offset: 6px;
+    transition: color 0.5s 0s;
+}
+.article{
+    border-bottom: 1px solid #1285C5;
+    padding:10px 20px;
+    width: 100%;
+    position: relative;
+}
+#article-last{
+    border-bottom: none;
+
+}
+
+.article span:nth-of-type(1) {
+    color: #888888; 
+  }
+
+/* 排版 */
+/* .article i{
+    display: inline-block;
+    position: absolute;
+    right:0px;
+    top:40%;
+} */
+.article i{
+    display: none;
+}
+
+.article span,
+.article h2{
+    margin-right :5px;
+}
+/* ------Desktop------ */
+@media screen and (min-width:768px) {
+.article span,
+.article h2{
+    margin-right:2%;
+}
+.article span{
+    display: inline-block;
+    width: 6em;
+    text-align: center;
+}
+.article i{
+    display: inline-block;
+    position: absolute;
+    right:10%;
+    top:40%;
+}
+#tab > ul > li > a { 
+
+    width: 8%;
+}
+}
