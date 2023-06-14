@@ -233,6 +233,14 @@
     left: -20px;
 }
 
+.menuList_title span{
+    color: #888888;
+}
+.newsList span{
+    color:#888888;
+}
+
+
 /* menu區媒體查詢 */
 @media screen and (min-width:768px) {
     .menu .col-12 {
