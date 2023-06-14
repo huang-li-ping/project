@@ -96,7 +96,7 @@ margin:2px 0px;
 /* 按鈕 */
 
 .slick-prev:before, .slick-next:before {
-    color: #1285C5;
+    display: none;
 }
 /* ------desktop------- */
 @media screen and (min-width:768px) {
