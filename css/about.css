@@ -100,3 +100,9 @@ h3 {
         top:-400px;
     }
 }
+
+@media screen and (max-width:768px) {
+    .banner{
+        padding-top: 20%;}
+
+    }
