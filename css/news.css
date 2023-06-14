@@ -5,6 +5,9 @@
     max-width: 1000px;
     margin: auto;
 }
+.newsContainer h1{
+    padding-top: 10%;
+}
 h1{
     margin-bottom:3%;
 }

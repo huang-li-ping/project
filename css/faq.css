@@ -3,6 +3,9 @@
 .faqHeader{
     padding-top:7%;
 }
+.faqTitle h1{
+    padding-top:15%;
+}
 .accordion-button{
     background-color: #F8F6ED; /*按鈕背景顏色 */
     color:#1285C5; /*按鈕文字顏色 */
