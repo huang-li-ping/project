@@ -126,6 +126,7 @@ a:hover p {
     left: 0px;
     padding: 10px;
     z-index: 1;
+    border-bottom: 1px solid #1285C5;
 
 }
 
@@ -190,6 +191,7 @@ a:hover p {
         height: 40px;
         background-color: #F8F6ED;
         position: relative;
+        right: 20px;
     }
 
     .hb:hover {

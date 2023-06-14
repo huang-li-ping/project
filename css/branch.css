@@ -1,5 +1,5 @@
 .branchContainer{
-    padding-top:10%;
+    padding-top:20%;
     padding-bottom: 3%;
     max-width: 1000px;
     margin: auto;
@@ -95,6 +95,13 @@ margin:2px 0px;
 
 /* ------desktop------- */
 @media screen and (min-width:768px) {
+.branchContainer{
+        padding-top:10%;
+        padding-bottom: 3%;
+        max-width: 1000px;
+        margin: auto;
+}
+
 #branch1, #branch2,.branchContent{
     max-width: 1200px;
     margin: auto;

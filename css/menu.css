@@ -4,6 +4,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+
 }
 .banner{
     margin-left: auto;
@@ -145,4 +146,12 @@ display: inline-block;
     .menuContainer{
         padding-top:0; /* desktop要none */
     }
+}
+@media screen and (max-width:768px) {
+.menuContainer{
+    padding-top:10%; /* desktop要none */
+}
+.tag_wrap span{
+    font-size: 12px;
+}
 }
