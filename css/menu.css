@@ -155,3 +155,10 @@ display: inline-block;
     font-size: 12px;
 }
 }
+
+@media screen and (max-width:768px) {
+    .menuContainer{
+        padding-top: 15%;
+    }
+
+}

@@ -540,3 +540,9 @@
     }
 }
 
+
+@media screen and (max-width:768px) {
+.bannerTitle h1{
+    padding-top: 15%;}
+    
+}

@@ -1,3 +1,4 @@
+
 .branchContainer{
     padding-top:20%;
     padding-bottom: 3%;
@@ -167,3 +168,18 @@ h2{
     left:-50px;
 }
 }
+
+
+.main--header {
+    background-color: #F8F6ED;
+    display: flex;
+    max-width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    left: 0px;
+    padding: 10px;
+    z-index: 1;
+    border-bottom: 1px solid #1285C5;
+
+}
+

@@ -173,3 +173,23 @@ a:hover h2{
     width: 8%;
 }
 }
+
+@media screen and (max-width:768px) {
+    .newsContainer h1{
+        margin:10px;}
+
+        .main--header {
+            background-color: #F8F6ED;
+            display: flex;
+            width: 990%;
+            position: fixed;
+            justify-content: space-between;
+            left: 0px;
+            padding: 10px;
+            z-index: 1;
+            border-bottom: 1px solid #1285C5;
+        
+        }
+
+
+    }
