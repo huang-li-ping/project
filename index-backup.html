@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <script src="js/jquery-3.7.0.js"></script>
+    <title>Meet Food | 在這裡遇見新鮮美好</title>
+</head>
+
+<body>
+    <div>
+        <!-- 選單 -->
+
+        <div class="container nav">
+            <input type="checkbox" name="" id="menu--switch">
+
+            <header class="main--header">
+
+                <div class="logo">
+                    <a href="index.html"><img src="logo.png"></a>
+                </div>
+
+                <label for="menu--switch" class="hb">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <nav class="main--nav">
+                    <a href="reservations.html">Reservations</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="news.html">News</a>
+                    <a href="about.html">About</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="branch.html">Branch</a>
+                </nav>
+            </header>
+        </div>
+
+        <!-- banner -->
+        <div class="container">
+            <div class="banner">
+                <div class="bannerTitle">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="logo.png" alt="">
+                            <h1>Meet fresh food here.</h1>
+                            <h2>在這裡遇見新鮮美好</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- banner 輪播圖 -->
+                <div class="row slideshow">
+                    <div class="col-12">
+                        <div class="slideshow">
+                            <img src="images/index/slide1.png" alt="" />
+                            <img src="images/index/slide2.png" alt="" />
+                            <img src="images/index/slide3.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container about">
+        <div class="row">
+            <!-- 手機 -->
+            <div class="col-12 txt">
+                <div class="title">
+                    <h2>About</h2>
+                    <h3>源自大自然的食材</h3>
+                </div>
+                <div class="txt">
+                    <p>我們相信，使用最新鮮、最健康的食材，能夠為您帶來最美味、最健康的飲食體驗。歡迎您品嚐這些來自海洋和大地的美味食材。<br>
+                        從選購到烹調，我們一直致力於提供優質食材和完美的烹調技術，以確保您享受到最佳的飲食體驗。我們堅持採用無農藥、無化學肥料的有機農作物和無污染、天然飼養的海鮮，以確保您食用的食物不含有害物質，並滿足您對健康和環保的需求。
+                    </p>
+
+                    <div class="buttonMore">
+                        <a href="about.html">
+                            <button class="seeMore">See more</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <img src="images/index/about.png" alt="">
+            </div>
+        </div>
+        <!-- 桌機 -->
+        <div class="row about">
+            <div class="col-6">
+                <div class="title">
+                    <h2>About</h2>
+                    <h3>源自大自然的食材</h3>
+                </div>
+                <div class="txt">
+                    <p>我們相信，使用最新鮮、最健康的食材，能夠為您帶來最美味、最健康的飲食體驗。歡迎您品嚐這些來自海洋和大地的美味食材。<br>
+                        從選購到烹調，我們一直致力於提供優質食材和完美的烹調技術，以確保您享受到最佳的飲食體驗。我們堅持採用無農藥、無化學肥料的有機農作物和無污染、天然飼養的海鮮，以確保您食用的食物不含有害物質，並滿足您對健康和環保的需求。
+                    </p>
+                </div>
+                <div class="buttonMore">
+                    <a href="about.html">
+                        <button class="seeMore">See more</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6">
+                <img src="images/index/about.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- menu -->
+    <div class="container menu">
+        <div class="row">
+            <!-- 手機 -->
+            <div class="col-12 txt">
+                <div class="title">
+                    <h2>Menu</h2>
+                    <h3>嚴選當季蔬果　帶給您最美味健康飲食</h3>
+                </div>
+                <div class="txt">
+                    <p>我們致力於根據季節變化，提供最優質的蔬菜和水果，以確保您在品嚐美食的同時，也能為身體補充所需營養。<br>
+                        季節變化對植物生長環境和條件有著極大的影響，因此我們會不斷地更新菜單，以反映當季最新鮮的蔬果。我們的食材來自於當地的農夫和供應商，並經過嚴格挑選和檢驗，以確保它們的新鮮度和品質。<br>
+                        我們相信，食材的新鮮度和質量對於健康的重要性不言而喻，因此我們致力於提供最優質的食材，讓您在品嚐美食的同時，也能為身體帶來充足的營養。不論是綠色蔬菜、豐富水果、還是其他健康食材，我們會不斷地優化菜單，以提供最符合您口味和需求的選擇。
+                    </p>
+
+                    <div class="buttonMore">
+                        <a href="menu.html">
+                            <button class="seeMore">See more</button>
+                            <div class="newsList">
+                    <a href="news.html">
+                        <span>2023.06.10</span>
+                        <h4>[最新活動] 好友分享日　下午茶買一送一</h4>
+                    </a>
+                    <a href="news.html">
+                        <span>2023.05.30</span>
+                        <h4>[新菜上市] 新菜上市！季節限定柳橙果凍</h4>
+                    </a>
+                    <a href="news.html">
+                        <span>2023.05.15</span>
+                        <h4>[限時優惠] 「週一無肉日」　蔬食七折</h4>
+                    </a>
+                    </div>
+                </div>
+                    </div>
+                    <div class="col-12">
+                        <img src="images/index/menu.png" alt="">
+                    </div>
+                </div>
+                <!-- 桌機 -->
+                <div class="row menu">
+                    <div class="col-6">
+                        <div class="title">
+                            <h2>Menu</h2>
+                            <h3>嚴選當季蔬果　帶給您最美味健康飲食</h3>
+                        </div>
+                        <div class="txt">
+                            <p>我們致力於根據季節變化，提供最優質的蔬菜和水果，以確保您在品嚐美食的同時，也能為身體補充所需營養。
+                                季節變化對植物生長環境和條件有著極大的影響，因此我們會不斷地更新菜單，以反映當季最新鮮的蔬果。<br>我們的食材來自於當地的農夫和供應商，並經過嚴格挑選和檢驗，以確保它們的新鮮度和品質。<br>
+                                我們相信，食材的新鮮度和質量對於健康的重要性不言而喻，因此我們致力於提供最優質的食材，讓您在品嚐美食的同時，也能為身體帶來充足的營養。不論是綠色蔬菜、豐富水果、還是其他健康食材，我們會不斷地優化菜單，以提供最符合您口味和需求的選擇。
+                            </p>
+                        </div>
+                        <div class="buttonMore">
+                            <a href="menu.html">
+                                <button class="seeMore">See more</button></a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <img src="images/index/menu.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- menuList -->
+            <div class="container">
+                <div class="row menuList">
+                    <div class="col-12">
+                        <img src="images/index/meal1.png">
+
+                        <div class="menuList_title">
+                            <span>人氣推薦</span>
+                            <a href="menu.html">
+                                <h3>羅勒風味海瓜子蛤蜊義大利寬麵</h3>
+                            </a>
+                            <p>搭配新鮮羅勒、香氣濃郁的海瓜子和鮮美蛤蜊</p>
+                        </div>
+                        <div class="menuList_link">
+                            <a href="menu.html">
+                                <p>More Details</p>
+                            </a>
+                            <i class="fa-solid fa-arrow-right-long" style="color: #1285c5;"></i>
+                        </div>
+                    </div>
+                    <div class="col-12">
+
+                        <img src="images/index/meal2.png">
+
+                        <div class="menuList_title">
+                            <span>主廚精選</span>
+                            <a href="menu.html">
+                                <h3>盧卡家鄉手工牛肉丸佐紅肉汁</h3>
+                            </a>
+                            <p>以家鄉風味的手工牛肉丸為主，搭配濃郁的紅肉汁，味道豐富濃郁，絕對能滿足您對美味。</p>
+                        </div>
+                        <div class="menuList_link">
+                            <a href="menu.html">
+                                <p>More Details</p>
+                            </a>
+                            <i class="fa-solid fa-arrow-right-long" style="color: #1285c5;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row menuList">
+                    <div class="col-12">
+                        <img src="images/index/meal3.png">
+
+                        <div class="menuList_title">
+                            <span>招牌推薦</span>
+                            <a href="menu.html">
+                                <h3>酸豆奶油燻鮭魚義大利細麵</h3>
+                            </a>
+                            <p>以燻鮭魚為主角，搭配酸豆奶油醬汁，營造出豐富的口感和獨特的風味。</p>
+                        </div>
+                        <div class="menuList_link">
+                            <a href="menu.html">
+                                <p>More Details</p>
+                            </a>
+                            <i class="fa-solid fa-arrow-right-long" style="color: #1285c5;"></i>
+                        </div>
+                    </div>
+                    <div class="col-12">
+
+                        <img src="images/index/meal4.png">
+
+                        <div class="menuList_title">
+                            <span>人氣推薦</span>
+                            <a href="menu.html">
+                                <h3>青蔬牡蠣蛋汁煎餅</h3>
+                            </a>
+                            <p>結合了新鮮青蔬和鮮美的牡蠣，加入蛋汁製成煎餅，口感酥脆，味道清爽</p>
+                        </div>
+                        <div class="menuList_link">
+                            <a href="menu.html">
+                                <p>More Details</p>
+                            </a>
+                            <i class="fa-solid fa-arrow-right-long" style="color: #1285c5;"></i>
+                        </div>
+                    </div>
+
+                    <!-- 桌 -->
+                    <div class="col-3">
+                        <img src="images/index/meal1.png">
+
+                        <div class="menuList_title">
+                            <span>人氣推薦</span>
+                            <a href="menu.html">
+                                <h3>羅勒風味海瓜子蛤蜊義大利寬麵</h3>
+                            </a>
+                            <p>搭配新鮮羅勒、香氣濃郁的海瓜子和鮮美蛤蜊</p>
+                        </div>
+                        <div class="menuList_link">
+                            <a href="menu.html">
+                                <p>More Details</p>
+                            </a>
+                            <i class="fa-solid fa-arrow-right-long" style="color: #1285c5;"></i>
+                        </div>
+                    </div>
+                    <div class="col-3">
+
+                        <img src="images/index/meal2.png">
+
+                        <div class="menuList_title">
+                            <span>主廚精選</span>
+                            <a href="menu.html">
+                                <h3>盧卡家鄉手工牛肉丸佐紅肉汁</h3>
+                            </a>
+                            <p>以家鄉風味的手工牛肉丸為主，搭配濃郁的紅肉汁，味道豐富濃郁，絕對能滿足您對美味。</p>
+                        </div>
+                        <div class="menuList_link">
+                            <a href="menu.html">
+                                <p>More Details</p>
+                            </a>
+                            <i class="fa-solid fa-arrow-right-long" style="color: #1285c5;"></i>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="images/index/meal3.png">
+
+                        <div class="menuList_title">
+                            <span>招牌推薦</span>
+                            <a href="menu.html">
+                                <h3>酸豆奶油燻鮭魚義大利細麵</h3>
+                            </a>
+                            <p>以燻鮭魚為主角，搭配酸豆奶油醬汁，營造出豐富的口感和獨特的風味。</p>
+                        </div>
+                        <div class="menuList_link">
+                            <a href="menu.html">
+                                <p>More Details</p>
+                            </a>
+                            <i class="fa-solid fa-arrow-right-long" style="color: #1285c5;"></i>
+                        </div>
+                    </div>
+                    <div class="col-3">
+
+                        <img src="images/index/meal4.png">
+
+                        <div class="menuList_title">
+                            <span>人氣推薦</span>
+                            <a href="menu.html">
+                                <h3>青蔬牡蠣蛋汁煎餅</h3>
+                            </a>
+                            <p>結合了新鮮青蔬和鮮美的牡蠣，加入蛋汁製成煎餅，口感酥脆，味道清爽</p>
+                        </div>
+                        <div class="menuList_link">
+                            <a href="menu.html">
+                                <p>More Details</p>
+                            </a>
+                            <i class="fa-solid fa-arrow-right-long" style="color: #1285c5;"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row news">
+                        <div class="col-12">
+                            <div class="newsTitle">
+                                <h2>News</h2>
+                            </div>
+                            <div class="newsList">
+                                <a href="news.html">
+                                    <span>2023.06.05</span>
+                                    <h4>[最新活動] 好友分享日　甜點買一送一</h4>
+                                </a>
+                                <a href="news.html">
+                                    <span>2023.05.30</span>
+                                    <h4>[新菜上市] 新菜上市！季節限定柳橙凍</h4>
+                                </a>
+                                <a href="news.html">
+                                    <span>2023.05.15</span>
+                                    <h4>[限時優惠] 「週一無肉日」　蔬食七折</h4>
+                                </a>
+                            </div>
+                            <div class="buttonMore">
+                                <a href="news.html">
+                                    <button class="seeMore">See more</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="row branch">
+                    <div class="col-12">
+                        <div class="branchTitle">
+                            <h2>Meet Branch</h2>
+                            <p>成立於2023年的台灣品牌，從一間巷口小吃店發展成為知名餐飲品牌。始終秉持著『天然食材、實在內餡』的堅持。這份執著與堅持，讓Meet Food享譽全球，並在各地開設分店。</p>
+                        </div>
+                        <div class="buttonMore">
+                            <a href="branch.html">
+                                <button class="seeMore">See more</button></a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="branchTitle">
+                            <h2>Meet Branch</h2>
+                            <p>成立於2023年的台灣品牌，從一間巷口小吃店發展成為知名餐飲品牌。始終秉持著『天然食材、實在內餡』的堅持。這份執著與堅持，讓Meet Food享譽全球，並在各地開設分店。</p>
+                        </div>
+                        <div class="buttonMore">
+                            <a href="branch.html">
+                                <button class="seeMore">See more</button></a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="branchCard">
+                            <a href="branch.html">
+                                <div class="branchPic">
+                                    <img src="images/index/branch1.png">
+                                </div>
+                                <div class="branchTxt">
+                                    <h4>MEET FOOD <br>淡水中正店</h4>
+                                </div>
+                                <div class="branchLink">
+                                    <p>More Details</p>
+                                    <i class="fa-solid fa-arrow-right-long" style="color: #1285c5;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="branchCard">
+                            <a href="branch.html">
+                                <div class="branchPic">
+                                    <img src="images/index/branch2.png">
+                                </div>
+                                <div class="branchTxt">
+                                    <h4>MEET FOOD <br>八里觀海店</h4>
+                                </div>
+                                <div class="branchLink">
+                                    <p>More Details</p>
+                                    <i class="fa-solid fa-arrow-right-long" style="color: #1285c5;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row branches">
+                    <div class="col-6">
+                        <div class="branchCard">
+                            <a href="branch.html">
+                                <div class="branchPic">
+                                    <img src="images/index/branch1.png">
+                                </div>
+                                <div class="branchTxt">
+                                    <h4>MEET FOOD 淡水中正館</h4>
+                                </div>
+                                <div class="branchLink">
+                                    <p>More Details</p>
+                                    <i class="fa-solid fa-arrow-right-long" style="color: #1285c5;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="branchCard">
+                            <a href="branch.html">
+                                <div class="branchPic">
+                                    <img src="images/index/branch2.png">
+                                </div>
+                                <div class="branchTxt">
+                                    <h4>MEET FOOD 八里觀海館</h4>
+                                </div>
+                                <div class="branchLink">
+                                    <p>More Details</p>
+                                    <i class="fa-solid fa-arrow-right-long" style="color: #1285c5;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer -->
+                <footer>
+                    <div class="footer">
+                        <div class="container">
+                            <div class="footer_pic">
+                                <img src="logo_footer.png" alt="">
+                            </div>
+                            <div class="footer_info">
+                                <h3>Info</h3>
+                                <span>Address: 新北市淡水區中正路1號</span>
+                                <span>Tel: +886 917449666</span>
+                                <span>Mail: happyporkrice@gmail.com</span>
+                            </div>
+                            <div class="footer_service">
+                                <h3>服務與權利</h3>
+                                <a href="#">隱私權聲明</a>
+                                <a href="#">網站使用條款</a>
+                                <a href="#">防疫措施公告</a>
+                                <a href="#">聯絡我們</a>
+                            </div>
+                            <div class="footer_follow">
+                                <h3>Follow Us</h3>
+                                <li><a href="#"><i class="fas fa-globe-americas"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <div class="clearfix"></div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+
+                <!-- top button -->
+                <a href="javascript:void(0)" onclick="topFunction()" id="myBtn" title="Go to top">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </a>
+
+
+
+</body>
+<script>
+    // banner 輪播圖
+    $('.slideshow').each(function () {
+
+        let slideImgs = $(this).find('img'),
+            slideImgsCount = slideImgs.length,
+            currentIndex = 0;
+
+        slideImgs.eq(currentIndex).fadeIn();
+
+        setInterval(showNextSlide, 5000);
+
+        function showNextSlide() {
+            let nextIndex = (currentIndex + 1) % slideImgsCount;
+            console.log(nextIndex)
+            slideImgs.eq(currentIndex).fadeOut();
+            slideImgs.eq(nextIndex).fadeIn();
+            currentIndex = nextIndex;
+        }
+    })
+    //top button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    $("a#myBtn").on("click", function () {
+        $("html").animate({
+            scrollTop: 0
+        });
+    });
+
+
+</script>
+
+</html>
