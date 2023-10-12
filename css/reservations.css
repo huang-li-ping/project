@@ -24,11 +24,12 @@ h1{
 input[type="text"],
 input[type="tel"],
 input[type="email"],
+input[type="datetime-local"],
 select {
   width: 360px; 
-  height: 30px; 
+  height: 35px; 
   border: 1px solid #C8C9CD; 
-  padding: 5px; 
+  padding: 10px; 
   /* margin:30px 0px 0px 20px; */
   border-radius: 5px;
   box-sizing: border-box;
@@ -39,6 +40,7 @@ textarea#note {
   height: 100px; 
   border: 1px solid #C8C9CD; 
   border-radius: 5px;
+  padding: 10px;
   /* margin: 30px 0px 0px 20px; */
 }
 
@@ -74,7 +76,8 @@ label{
 .main select {
     width: 100%;
     margin-top: 10px;
-    height: 30px;
+    height: 35px;
+    box-sizing: border-box;
 }
 
 .buttonSubmit {

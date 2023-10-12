@@ -10,8 +10,9 @@
 .picSpirit img {
     max-width: 100%;
     /* max-height: 100%; */
+
     object-fit: cover;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 /*  */
 .pic{
@@ -92,12 +93,12 @@ h3 {
     }
     .picFood img{
         position: relative;
-        top:-500px;
+        /* top:-500px; */
     }
 
     .picSpirit img{
         position: relative;
-        top:-400px;
+        /* top:-400px; */
     }
 }
 

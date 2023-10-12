@@ -137,12 +137,7 @@ a:hover h2{
   }
 
 /* 排版 */
-/* .article i{
-    display: inline-block;
-    position: absolute;
-    right:0px;
-    top:40%;
-} */
+
 .article i{
     display: none;
 }
@@ -153,6 +148,11 @@ a:hover h2{
 }
 /* ------Desktop------ */
 @media screen and (min-width:768px) {
+
+.newsContainer h1{
+    padding-top: 3%;
+}
+
 .article span,
 .article h2{
     margin-right:2%;
@@ -174,8 +174,8 @@ a:hover h2{
 }
 }
 
-@media screen and (max-width:768px) {
+/* @media screen and (min-width:768px) {
     .newsContainer h1{
         margin:10px;}
 
-    }
+    } */

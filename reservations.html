@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reservations.css">
     <link rel="stylesheet" href="css/grid.css">
@@ -53,27 +53,27 @@
 
     <!-- content -->
     <div class="reservationsContainer">
-    <div class="banner">
-        <img src="images/reservations/banner.png" alt="banner">
-    </div>
-    <h1 id="title">Reservations</h1>
-    <div class="container">
-      
-        <div class="side">
-              
-              <p>歡迎您訂位！為了確保您有一個愉快的用餐體驗，請注意以下幾點：<br><br>
-
-                1. 預約時間：如果您需要更改預約時間，請在提前時間內通知我們，以便調整座位。<br><br>
-                2. 取消和更改政策：如果您需要取消或更改預訂，請提前通知。請注意，如果您未能按時到達，我們可能會釋放您的座位。<br><br>
-                3. 餐點限制：如果您有任何飲食限制，例如過敏或特殊飲食要求，請在預訂時告知我們。<br><br>
-                4. 優惠和折扣：如果餐廳提供任何特殊優惠或折扣，我們會在預訂時告知您。<br><br>
-
-                我們感謝您選擇我們的餐廳，期待在不久的將來為您提供最好的用餐體驗！</p>
+        <div class="banner">
+            <img src="images/reservations/banner.png" alt="banner">
         </div>
-        <div class="main">
-            <h1 id="desktopTitle">Reservations</h1>
+        <h1 id="title">Reservations</h1>
+        <div class="container">
+
+            <div class="side">
+
+                <p>歡迎您訂位！為了確保您有一個愉快的用餐體驗，請注意以下幾點：<br><br>
+
+                    1. 預約時間：如果您需要更改預約時間，請在提前時間內通知我們，以便調整座位。<br><br>
+                    2. 取消和更改政策：如果您需要取消或更改預訂，請提前通知。請注意，如果您未能按時到達，我們可能會釋放您的座位。<br><br>
+                    3. 餐點限制：如果您有任何飲食限制，例如過敏或特殊飲食要求，請在預訂時告知我們。<br><br>
+                    4. 優惠和折扣：如果餐廳提供任何特殊優惠或折扣，我們會在預訂時告知您。<br><br>
+
+                    我們感謝您選擇我們的餐廳，期待在不久的將來為您提供最好的用餐體驗！</p>
+            </div>
+            <div class="main">
+                <h1 id="desktopTitle">Reservations</h1>
                 <ul>
-                    <li> <label for="name" >姓名</label>
+                    <li> <label for="name">姓名</label>
                         <input type="text" id="name">
                     </li>
                     <li> <label for="phone">電話</label>
@@ -93,39 +93,18 @@
 
                     <li>用餐餐廳
 
-                        <select class="select" name="people">
+                        <select class="select" name="store">
                             <option value="">請選擇</option>
                             <option value="">淡水中正店</option>
                             <option value="">八里觀海店</option>
                         </select>
                     </li>
-                    <li>用餐日期<select class="select" name="people">
-                            <option value="">請選擇</option>
-                            <option value="">5/24 (三)</option>
-                            <option value="">5/25 (四)</option>
-                            <option value="">5/26 (五)</option>
-                            <option value="">5/27 (六)</option>
-                            <option value="">5/28 (日)</option>
-                            <option value="">5/29 (一)</option>
-                            <option value="">5/30 (二)</option>
-                        </select>
+                    <li>用餐日期
+                        <input type="datetime-local" id="datetime" value="" min="" max="">
 
-                    <li>用餐時段<select class="select" name="people">
-                            <option value="">請選擇</option>
-                            <option value="">11:00</option>
-                            <option value="">12:00</option>
-                            <option value="">13:00</option>
-                            <option value="">14:00</option>
-                            <option value="">15:00</option>
-                            <option value="">16:00</option>
-                            <option value="">17:00</option>
-                            <option value="">18:00</option>
-                            <option value="">19:00</option>
-                            <option value="">20:00</option>
-                            <option value="">21:00</option>
+                    </li>
 
-                        </select>
-                        </label> </li>
+
                     <li> <label for="note" style="vertical-align: 380%;">備註　　</label>
                         <textarea id="note"></textarea>
                     </li>
@@ -133,11 +112,12 @@
 
                 </ul>
 
-            </form>
-            <div class="buttonSubmit">
-            <button class="seeMore">SUBMIT</button>
-        </div></div>
-    </div>
+                </form>
+                <div class="buttonSubmit">
+                    <button class="seeMore">SUBMIT</button>
+                </div>
+            </div>
+        </div>
         <!-- Footer -->
         <footer>
             <div class="footer">
@@ -181,6 +161,24 @@
 
 </body>
 <script>
+
+    //dateTime
+    let today = new Date();
+
+    let maxDate = new Date();
+    maxDate.setDate(today.getDate() + 30);
+
+    let timezoneOffset = today.getTimezoneOffset();
+    today.setMinutes(today.getMinutes() - timezoneOffset);
+    maxDate.setMinutes(maxDate.getMinutes() - timezoneOffset);
+    let todayFormatted = today.toISOString().slice(0, 16);
+    let maxDateFormatted = maxDate.toISOString().slice(0, 16);
+    
+    document.getElementById("datetime").value = todayFormatted;
+    document.getElementById("datetime").min = todayFormatted;
+    document.getElementById("datetime").max = maxDateFormatted;
+
+
 
     //top button
     let mybutton = document.getElementById("myBtn");

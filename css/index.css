@@ -45,7 +45,7 @@
     padding-top: 13%;
 }
 
-/* banner 媒體查詢 */
+/* banner */
 @media screen and (min-width:768px) {
     .bannerTitle img {
         display: block;
@@ -97,6 +97,8 @@
     .slideshow img {
         max-width: 100%;
         max-height: auto;
+        width: 100%;
+        height: 100%;
         border-left: 2.5px solid #1285C5;
     }
 
@@ -171,6 +173,8 @@
     .about .col-6 img {
         max-width: 100%;
         max-height: auto;
+        width: 100%;
+        height: 100%;
         top: 0;
         left: 0;
         margin: 0px;
@@ -207,9 +211,9 @@
     padding: 10px;
 }
 
-.menu .col-12 img {
-    /* width: 100%;
-        height: 100%; */
+.menu .col-6 img {
+    width: 100%;
+    height: 100%; 
     max-width: 100%;
     max-height: auto;
     top: 0;
@@ -220,6 +224,8 @@
 .menu .col-6 {
     display: none;
 }
+
+
 
 .menuList_link {
     display: flex;
